@@ -20,16 +20,15 @@ app.get('/notes', (req, res) => res.sendFile(path.join(__dirname, 'notes.html'))
 
 
 // Displays all notes
-app.get('/api/notes', (req, res) => res.json(notes));
-
+app.get('/api/notes', (req, res) => {
+  res.json(notes)); //NEED TO FIGURE OUT HOW TO RESPOND WITH ALL NOTES IN DB
+}
 // Displays a single note, or returns false
 app.get('/api/notes/:note', (req, res) => {
   const chosenNote = req.params.note;
 
+  //NEED TO FIGURE OUT HOW TO GRAB A SPECIFIED NOTE FROM THE DB
 
-  /* Check each note routeName and see if the same as "chosenNote"
-   If the statement is true, send the chosenNote back as JSON,
-   otherwise tell the user no chosenNote was found */
 
   // for (let i = 0; i < notes.length; i++) {
   //   if (chosenNote === notes[i].routeName) {
@@ -42,6 +41,9 @@ app.get('/api/notes/:note', (req, res) => {
 
 // Create New Notes - takes in JSON input
 app.post('/api/notes', (req, res) => {
+
+  //NEED TO FIGURE OUT HOW TO POST TO THE DB
+
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   // const newNote = req.body;
