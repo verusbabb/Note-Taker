@@ -35,7 +35,7 @@ A screenshot of the app with a few stored notes:
 
 ![Screenshot of HTML Output](https://github.com/verusbabb/Note-Taker/blob/main/Assets/stored_notes.png)
 
-Sample output from the same user data input:
+The note app with a stored note displayed on main screen:
 
 ![Screenshot of stored note revealed](https://github.com/verusbabb/Note-Taker/blob/main/Assets/stored_note_display.png)
 
