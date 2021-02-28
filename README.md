@@ -1,6 +1,5 @@
 # Note-Taker
-This is a command line application that takes user input and creates a styled webpage displaying information 
-about all team members.
+A handy little web app for taking and storing notes.
 
 ## *Table of Contents*
 
