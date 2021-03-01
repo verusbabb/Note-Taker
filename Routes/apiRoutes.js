@@ -1,10 +1,11 @@
+//Setting up dependencies
 const express = require('express');
 const router = express.Router();
 const fs = require('fs');
 const uniqid = require('uniqid');
 
 
-//Grabs data from the data file
+//Assigning data from the data file/parsing
 var storedData = fs.readFileSync('./Develop/db/db.json');
 var storedNotes = JSON.parse(storedData);
 console.log(storedNotes);
@@ -30,6 +31,7 @@ router.route('/api/notes')
         res.json(newNote)
     })
 
+// Route that selected note
 router.route('/api/notes/:id')
     .delete((req, res) => {
         console.log(req.params.id)
@@ -38,4 +40,5 @@ router.route('/api/notes/:id')
         res.end("Note deleted")
     })
 
+// Exporting routes for use in server.js
 module.exports = router;
