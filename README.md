@@ -1,5 +1,10 @@
 # Note-Taker
-A handy little web app for taking and storing notes.
+A handy little web app for taking and storing notes that demonstrates developers core competencies of working within Node/using Express to build an app that relies on API calls between client and server to store/retrieve user notes.
+
+Future feature plans include:
+- unique user ID/log-in
+- storing user data (and app) outside of dev server
+- adding security to storage
 
 ## *Table of Contents*
 
@@ -13,7 +18,7 @@ A handy little web app for taking and storing notes.
 This application was developed using Node, Javascript, HTML, CSS, and Express as a NPM dependency.
 
 ## *Installation*
-To install this application, I recommend you clone this repo to a folder on your local device.  Open the repo
+To install this application, it is recommended that you clone this repo to a folder on your local device.  Open the repo
 in the code editor of your choice (I prefer VS Code).  
 
 Step 1: Open an integrated terminal from index.js and the following command to install all required dependencies:
@@ -27,7 +32,7 @@ node index.js
 ```
 
 Alternatively: Run the application hosted on Heroku:
-![Link to app at Heroku](https://verus-note-taker.herokuapp.com/)
+(https://verus-note-taker.herokuapp.com/)
 
 ## *Screenshots*
 
